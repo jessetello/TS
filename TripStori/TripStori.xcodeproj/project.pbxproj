@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33DBE3A0E48FC3C9AB69532A /* Pods_TripStori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F763D3807B28A3A88DED80A /* Pods_TripStori.framework */; };
+		91F464591D92BA6400733BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464581D92BA6400733BEB /* AppDelegate.swift */; };
+		91F4645B1D92BA6400733BEB /* TSWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */; };
+		91F464601D92BA6400733BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F4645F1D92BA6400733BEB /* Assets.xcassets */; };
+		91F464631D92BA6400733BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F464611D92BA6400733BEB /* LaunchScreen.storyboard */; };
+		91F464711D92BB7800733BEB /* TSFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646C1D92BB7800733BEB /* TSFeedViewController.swift */; };
+		91F464721D92BB7800733BEB /* TSFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646D1D92BB7800733BEB /* TSFriendsViewController.swift */; };
+		91F464731D92BB7800733BEB /* TSRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */; };
+		91F464741D92BB7800733BEB /* TSStorisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */; };
+		91F464751D92BB7800733BEB /* VideoUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464701D92BB7800733BEB /* VideoUploadManager.swift */; };
+		91F464771D92BBC500733BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F464761D92BBC500733BEB /* Main.storyboard */; };
+		91F464791D9B0C3300733BEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F464781D9B0C3300733BEB /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		506E8125C074EE25CABDCDD4 /* Pods-TripStori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripStori.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripStori/Pods-TripStori.debug.xcconfig"; sourceTree = "<group>"; };
+		5F763D3807B28A3A88DED80A /* Pods_TripStori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripStori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62228FBFDE7E3F5F0F19E475 /* Pods-TripStori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripStori.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripStori/Pods-TripStori.release.xcconfig"; sourceTree = "<group>"; };
+		91F464551D92BA6300733BEB /* TripStori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripStori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F464581D92BA6400733BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSWelcomeViewController.swift; sourceTree = "<group>"; };
+		91F4645F1D92BA6400733BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91F464621D92BA6400733BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91F464641D92BA6400733BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F4646C1D92BB7800733BEB /* TSFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFeedViewController.swift; sourceTree = "<group>"; };
+		91F4646D1D92BB7800733BEB /* TSFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFriendsViewController.swift; sourceTree = "<group>"; };
+		91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSRecordViewController.swift; sourceTree = "<group>"; };
+		91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSStorisViewController.swift; sourceTree = "<group>"; };
+		91F464701D92BB7800733BEB /* VideoUploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoUploadManager.swift; sourceTree = "<group>"; };
+		91F464761D92BBC500733BEB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		91F464781D9B0C3300733BEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91F464521D92BA6300733BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DBE3A0E48FC3C9AB69532A /* Pods_TripStori.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58BDF5F0A6FBAA7AB650B0C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F763D3807B28A3A88DED80A /* Pods_TripStori.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B973A633AB6354FDDAEBA35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				506E8125C074EE25CABDCDD4 /* Pods-TripStori.debug.xcconfig */,
+				62228FBFDE7E3F5F0F19E475 /* Pods-TripStori.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91F4644C1D92BA6300733BEB = {
+			isa = PBXGroup;
+			children = (
+				91F464571D92BA6300733BEB /* TripStori */,
+				91F464561D92BA6300733BEB /* Products */,
+				8B973A633AB6354FDDAEBA35 /* Pods */,
+				58BDF5F0A6FBAA7AB650B0C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91F464561D92BA6300733BEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91F464551D92BA6300733BEB /* TripStori.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91F464571D92BA6300733BEB /* TripStori */ = {
+			isa = PBXGroup;
+			children = (
+				91F464581D92BA6400733BEB /* AppDelegate.swift */,
+				91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */,
+				91F4646C1D92BB7800733BEB /* TSFeedViewController.swift */,
+				91F4646D1D92BB7800733BEB /* TSFriendsViewController.swift */,
+				91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */,
+				91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */,
+				91F464701D92BB7800733BEB /* VideoUploadManager.swift */,
+				91F464761D92BBC500733BEB /* Main.storyboard */,
+				91F4645F1D92BA6400733BEB /* Assets.xcassets */,
+				91F464611D92BA6400733BEB /* LaunchScreen.storyboard */,
+				91F464781D9B0C3300733BEB /* GoogleService-Info.plist */,
+				91F464641D92BA6400733BEB /* Info.plist */,
+			);
+			path = TripStori;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91F464541D92BA6300733BEB /* TripStori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F464671D92BA6400733BEB /* Build configuration list for PBXNativeTarget "TripStori" */;
+			buildPhases = (
+				EF1B42C3DC65F98C00D1C58F /* Check Pods Manifest.lock */,
+				91F464511D92BA6300733BEB /* Sources */,
+				91F464521D92BA6300733BEB /* Frameworks */,
+				91F464531D92BA6300733BEB /* Resources */,
+				D5EC7A333BBF682E2BEACCDA /* Embed Pods Frameworks */,
+				CA7570A5FE280CDBBA53EAEE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripStori;
+			productName = TripStori;
+			productReference = 91F464551D92BA6300733BEB /* TripStori.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91F4644D1D92BA6300733BEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Tello;
+				TargetAttributes = {
+					91F464541D92BA6300733BEB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q78JZ9X2RG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 91F464501D92BA6300733BEB /* Build configuration list for PBXProject "TripStori" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91F4644C1D92BA6300733BEB;
+			productRefGroup = 91F464561D92BA6300733BEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91F464541D92BA6300733BEB /* TripStori */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91F464531D92BA6300733BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F464631D92BA6400733BEB /* LaunchScreen.storyboard in Resources */,
+				91F464791D9B0C3300733BEB /* GoogleService-Info.plist in Resources */,
+				91F464771D92BBC500733BEB /* Main.storyboard in Resources */,
+				91F464601D92BA6400733BEB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA7570A5FE280CDBBA53EAEE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripStori/Pods-TripStori-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5EC7A333BBF682E2BEACCDA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripStori/Pods-TripStori-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF1B42C3DC65F98C00D1C58F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91F464511D92BA6300733BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F464711D92BB7800733BEB /* TSFeedViewController.swift in Sources */,
+				91F464721D92BB7800733BEB /* TSFriendsViewController.swift in Sources */,
+				91F4645B1D92BA6400733BEB /* TSWelcomeViewController.swift in Sources */,
+				91F464591D92BA6400733BEB /* AppDelegate.swift in Sources */,
+				91F464751D92BB7800733BEB /* VideoUploadManager.swift in Sources */,
+				91F464731D92BB7800733BEB /* TSRecordViewController.swift in Sources */,
+				91F464741D92BB7800733BEB /* TSStorisViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91F464611D92BA6400733BEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F464621D92BA6400733BEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91F464651D92BA6400733BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Debug;
+		};
+		91F464661D92BA6400733BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91F464681D92BA6400733BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 506E8125C074EE25CABDCDD4 /* Pods-TripStori.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q78JZ9X2RG;
+				INFOPLIST_FILE = TripStori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jt.TripStori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		91F464691D92BA6400733BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62228FBFDE7E3F5F0F19E475 /* Pods-TripStori.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q78JZ9X2RG;
+				INFOPLIST_FILE = TripStori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jt.TripStori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91F464501D92BA6300733BEB /* Build configuration list for PBXProject "TripStori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F464651D92BA6400733BEB /* Debug */,
+				91F464661D92BA6400733BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91F464671D92BA6400733BEB /* Build configuration list for PBXNativeTarget "TripStori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F464681D92BA6400733BEB /* Debug */,
+				91F464691D92BA6400733BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91F4644D1D92BA6300733BEB /* Project object */;
+}
