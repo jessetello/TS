@@ -111,7 +111,9 @@
                                     <constraint firstAttribute="width" constant="148" id="1J5-pR-HY7"/>
                                     <constraint firstAttribute="height" constant="50" id="gfk-qP-K5p"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="facebookLogin:" destination="JUt-yg-Fni" eventType="touchUpInside" id="OhS-sD-OsI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0C-J8-ut3" userLabel="Google">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -122,6 +124,9 @@
                                 <state key="normal" title="Google">
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="googleLogin:" destination="JUt-yg-Fni" eventType="touchUpInside" id="xpK-CG-Xd0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tripSTORI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HS-IN-Eei">
                                 <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="50"/>
@@ -159,6 +164,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2jn-as-w9H"/>
+                    <connections>
+                        <outlet property="faceBookLogin" destination="Ovv-D7-RMD" id="OVY-4f-ga5"/>
+                        <outlet property="googleLogin" destination="G0C-J8-ut3" id="JhJ-Ue-ngv"/>
+                        <outlet property="signIn" destination="PPe-pb-O4F" id="5Oi-AI-7SZ"/>
+                        <outlet property="signUp" destination="l8g-Q6-yYR" id="KW8-fo-WjY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJn-GA-DCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

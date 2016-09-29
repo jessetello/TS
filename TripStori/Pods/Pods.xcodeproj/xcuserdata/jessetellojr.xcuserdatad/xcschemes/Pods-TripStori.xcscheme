@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7B0ED52BACD0AA897281D591'
+               BlueprintIdentifier = '852BA3089BBE043055B7F2BE'
                BlueprintName = 'Pods-TripStori'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_TripStori.framework'>
