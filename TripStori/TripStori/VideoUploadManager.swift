@@ -45,6 +45,7 @@ class VideoUploadManager {
             // Upload reported progress
             if let progress = snapshot.progress {
                 let percentComplete = 100.0 * Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
+                print(percentComplete)
             }
         }
         uploadTask.observe(.success) { snapshot in

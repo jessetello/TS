@@ -10,40 +10,48 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FBSDKLoginKit
+import GoogleSignIn
 
-class TSWelcomeViewController: UIViewController {
+class TSWelcomeViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var signIn: UIButton!
     @IBOutlet weak var signUp: UIButton!
-    @IBOutlet weak var faceBookLogin: FBSDKLoginButton!
-    @IBOutlet weak var googleLogin: UIButton!
-
+    @IBOutlet weak var facebookButton: FBSDKLoginButton!
+    @IBOutlet weak var googleButton: UIButton!
+    
     private let dataURL = "gs://tripstori-59fb9.appspot.com"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        GIDSignIn.sharedInstance().uiDelegate = self
+        googleButton.layer.cornerRadius = 3
+        googleButton.layer.borderWidth = 1
+        googleButton.layer.borderColor = UIColor.black.cgColor
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func facebookLogin(_ sender: FBSDKLoginButton) {
         let facebookLogin = FBSDKLoginManager()
-        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (loginResult, error) in
-            FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-            
+        facebookLogin.logIn(withReadPermissions: ["email","public_profile","user_friends"], from: self) { loginResult, error in
+            let cred = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+            FIRAuth.auth()?.signIn(with: cred, completion: { (user, error) in
+                
+            })
         }
     }
     
-    @IBAction func googleLogin(_ sender: UIButton) {
+    @IBAction func signUp(_ sender: UIButton) {
+        
+
+    
+    
+    }
+    
+    @IBAction func signIn(_ sender: UIButton) {
+        
         
         
         
     }
-    
-    
 }
 
