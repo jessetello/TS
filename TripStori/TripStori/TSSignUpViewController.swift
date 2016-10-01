@@ -8,6 +8,12 @@
 
 import UIKit
 
-class TSSignUpViewController: NSObject {
+class TSSignUpViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
 
 }

@@ -12,15 +12,16 @@
 		91F4645B1D92BA6400733BEB /* TSWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */; };
 		91F464601D92BA6400733BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F4645F1D92BA6400733BEB /* Assets.xcassets */; };
 		91F464631D92BA6400733BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F464611D92BA6400733BEB /* LaunchScreen.storyboard */; };
-		91F464711D92BB7800733BEB /* TSFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646C1D92BB7800733BEB /* TSFeedViewController.swift */; };
+		91F464711D92BB7800733BEB /* TSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646C1D92BB7800733BEB /* TSMainViewController.swift */; };
 		91F464721D92BB7800733BEB /* TSFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646D1D92BB7800733BEB /* TSFriendsViewController.swift */; };
 		91F464731D92BB7800733BEB /* TSRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */; };
 		91F464741D92BB7800733BEB /* TSStorisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */; };
 		91F464751D92BB7800733BEB /* VideoUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464701D92BB7800733BEB /* VideoUploadManager.swift */; };
 		91F464771D92BBC500733BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F464761D92BBC500733BEB /* Main.storyboard */; };
 		91F464791D9B0C3300733BEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F464781D9B0C3300733BEB /* GoogleService-Info.plist */; };
-		91F4648A1D9F402E00733BEB /* TSSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464891D9F402E00733BEB /* TSSignUpViewController.swift */; };
-		91F4648C1D9F404200733BEB /* TSLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4648B1D9F404200733BEB /* TSLogInViewController.swift */; };
+		91F4648E1D9F49B600733BEB /* TSSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4648D1D9F49B600733BEB /* TSSignUpViewController.swift */; };
+		91F464901D9F49C900733BEB /* TSLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */; };
+		91F464921DA06D6900733BEB /* TSFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464911DA06D6900733BEB /* TSFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,15 +34,16 @@
 		91F4645F1D92BA6400733BEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91F464621D92BA6400733BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F464641D92BA6400733BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91F4646C1D92BB7800733BEB /* TSFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFeedViewController.swift; sourceTree = "<group>"; };
+		91F4646C1D92BB7800733BEB /* TSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMainViewController.swift; sourceTree = "<group>"; };
 		91F4646D1D92BB7800733BEB /* TSFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFriendsViewController.swift; sourceTree = "<group>"; };
 		91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSRecordViewController.swift; sourceTree = "<group>"; };
 		91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSStorisViewController.swift; sourceTree = "<group>"; };
 		91F464701D92BB7800733BEB /* VideoUploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoUploadManager.swift; sourceTree = "<group>"; };
 		91F464761D92BBC500733BEB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		91F464781D9B0C3300733BEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		91F464891D9F402E00733BEB /* TSSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSignUpViewController.swift; sourceTree = "<group>"; };
-		91F4648B1D9F404200733BEB /* TSLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLogInViewController.swift; sourceTree = "<group>"; };
+		91F4648D1D9F49B600733BEB /* TSSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSignUpViewController.swift; sourceTree = "<group>"; };
+		91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLogInViewController.swift; sourceTree = "<group>"; };
+		91F464911DA06D6900733BEB /* TSFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,10 @@
 			children = (
 				91F464581D92BA6400733BEB /* AppDelegate.swift */,
 				91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */,
-				91F464891D9F402E00733BEB /* TSSignUpViewController.swift */,
-				91F4648B1D9F404200733BEB /* TSLogInViewController.swift */,
-				91F4646C1D92BB7800733BEB /* TSFeedViewController.swift */,
+				91F4648D1D9F49B600733BEB /* TSSignUpViewController.swift */,
+				91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */,
+				91F4646C1D92BB7800733BEB /* TSMainViewController.swift */,
+				91F464911DA06D6900733BEB /* TSFeedViewController.swift */,
 				91F4646D1D92BB7800733BEB /* TSFriendsViewController.swift */,
 				91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */,
 				91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */,
@@ -237,13 +240,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F464711D92BB7800733BEB /* TSFeedViewController.swift in Sources */,
+				91F464711D92BB7800733BEB /* TSMainViewController.swift in Sources */,
 				91F464721D92BB7800733BEB /* TSFriendsViewController.swift in Sources */,
 				91F4645B1D92BA6400733BEB /* TSWelcomeViewController.swift in Sources */,
-				91F4648A1D9F402E00733BEB /* TSSignUpViewController.swift in Sources */,
+				91F4648E1D9F49B600733BEB /* TSSignUpViewController.swift in Sources */,
 				91F464591D92BA6400733BEB /* AppDelegate.swift in Sources */,
 				91F464751D92BB7800733BEB /* VideoUploadManager.swift in Sources */,
-				91F4648C1D9F404200733BEB /* TSLogInViewController.swift in Sources */,
+				91F464901D9F49C900733BEB /* TSLogInViewController.swift in Sources */,
+				91F464921DA06D6900733BEB /* TSFeedViewController.swift in Sources */,
 				91F464731D92BB7800733BEB /* TSRecordViewController.swift in Sources */,
 				91F464741D92BB7800733BEB /* TSStorisViewController.swift in Sources */,
 			);
