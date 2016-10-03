@@ -39,19 +39,5 @@ class TSWelcomeViewController: UIViewController, GIDSignInUIDelegate {
             })
         }
     }
-    
-    @IBAction func signUp(_ sender: UIButton) {
-        
-
-    
-    
-    }
-    
-    @IBAction func signIn(_ sender: UIButton) {
-        
-        
-        
-        
-    }
 }
 

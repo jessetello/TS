@@ -22,6 +22,7 @@
 		91F4648E1D9F49B600733BEB /* TSSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4648D1D9F49B600733BEB /* TSSignUpViewController.swift */; };
 		91F464901D9F49C900733BEB /* TSLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */; };
 		91F464921DA06D6900733BEB /* TSFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464911DA06D6900733BEB /* TSFeedViewController.swift */; };
+		91F464941DA1E64200733BEB /* TSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464931DA1E64200733BEB /* TSHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		91F4648D1D9F49B600733BEB /* TSSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSignUpViewController.swift; sourceTree = "<group>"; };
 		91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLogInViewController.swift; sourceTree = "<group>"; };
 		91F464911DA06D6900733BEB /* TSFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFeedViewController.swift; sourceTree = "<group>"; };
+		91F464931DA1E64200733BEB /* TSHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */,
 				91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */,
 				91F464701D92BB7800733BEB /* VideoUploadManager.swift */,
+				91F464931DA1E64200733BEB /* TSHelpers.swift */,
 				91F464761D92BBC500733BEB /* Main.storyboard */,
 				91F4645F1D92BA6400733BEB /* Assets.xcassets */,
 				91F464611D92BA6400733BEB /* LaunchScreen.storyboard */,
@@ -244,6 +247,7 @@
 				91F464721D92BB7800733BEB /* TSFriendsViewController.swift in Sources */,
 				91F4645B1D92BA6400733BEB /* TSWelcomeViewController.swift in Sources */,
 				91F4648E1D9F49B600733BEB /* TSSignUpViewController.swift in Sources */,
+				91F464941DA1E64200733BEB /* TSHelpers.swift in Sources */,
 				91F464591D92BA6400733BEB /* AppDelegate.swift in Sources */,
 				91F464751D92BB7800733BEB /* VideoUploadManager.swift in Sources */,
 				91F464901D9F49C900733BEB /* TSLogInViewController.swift in Sources */,

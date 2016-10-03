@@ -24,13 +24,13 @@
                                     <constraint firstAttribute="height" constant="70" id="ZSI-yW-QN2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="50"/>
-                                <color key="textColor" red="0.33333333329999998" green="0.93725490199999995" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XG9-u4-59u" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-208.5" id="LNe-Qe-Gdq"/>
+                            <constraint firstItem="XG9-u4-59u" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-233.5" id="LNe-Qe-Gdq"/>
                             <constraint firstItem="XG9-u4-59u" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qTw-Cm-KOX"/>
                         </constraints>
                     </view>
