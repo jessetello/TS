@@ -31,14 +31,18 @@ class TSSignUpViewController: UIViewController {
         confirmPasswordField.underlined()
     }
     
-    func validateSignupInfo() {
-        
+    func validateSignupInfo() -> Bool {
+        return true
     }
 
     @IBAction func signUp(_ sender: UIButton) {
         
-        
-        
+        if validateSignupInfo() {
+            
+            
+            
+            
+        }
         
     }
 }

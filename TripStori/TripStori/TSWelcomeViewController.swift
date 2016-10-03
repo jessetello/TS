@@ -34,7 +34,7 @@ class TSWelcomeViewController: UIViewController, GIDSignInUIDelegate {
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email","public_profile","user_friends"], from: self) { loginResult, error in
             let cred = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-            FIRAuth.auth()?.signIn(with: cred, completion: { (user, error) in
+            AuthenticationManager.sharedInstance.loginWithCredential(credential: cred, completion: { (success) in
                 
             })
         }

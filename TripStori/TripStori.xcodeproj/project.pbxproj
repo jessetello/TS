@@ -23,6 +23,9 @@
 		91F464901D9F49C900733BEB /* TSLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */; };
 		91F464921DA06D6900733BEB /* TSFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464911DA06D6900733BEB /* TSFeedViewController.swift */; };
 		91F464941DA1E64200733BEB /* TSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464931DA1E64200733BEB /* TSHelpers.swift */; };
+		91F464961DA1EDA700733BEB /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464951DA1EDA700733BEB /* AuthenticationManager.swift */; };
+		91F464981DA1EE3600733BEB /* TSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464971DA1EE3600733BEB /* TSUser.swift */; };
+		91F4649A1DA1EEA900733BEB /* TSStori.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464991DA1EEA900733BEB /* TSStori.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLogInViewController.swift; sourceTree = "<group>"; };
 		91F464911DA06D6900733BEB /* TSFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFeedViewController.swift; sourceTree = "<group>"; };
 		91F464931DA1E64200733BEB /* TSHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSHelpers.swift; sourceTree = "<group>"; };
+		91F464951DA1EDA700733BEB /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		91F464971DA1EE3600733BEB /* TSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSUser.swift; sourceTree = "<group>"; };
+		91F464991DA1EEA900733BEB /* TSStori.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSStori.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,23 +105,74 @@
 			isa = PBXGroup;
 			children = (
 				91F464581D92BA6400733BEB /* AppDelegate.swift */,
+				91F4649B1DA1EEBD00733BEB /* Models */,
+				91F4649E1DA1EF6900733BEB /* Views */,
+				91F4649F1DA1EFB000733BEB /* ViewModels */,
+				91F4649D1DA1EF0800733BEB /* Controllers */,
+				91F464931DA1E64200733BEB /* TSHelpers.swift */,
+				91F4645F1D92BA6400733BEB /* Assets.xcassets */,
+				91F464781D9B0C3300733BEB /* GoogleService-Info.plist */,
+				91F464641D92BA6400733BEB /* Info.plist */,
+			);
+			path = TripStori;
+			sourceTree = "<group>";
+		};
+		91F4649B1DA1EEBD00733BEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91F464971DA1EE3600733BEB /* TSUser.swift */,
+				91F464991DA1EEA900733BEB /* TSStori.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		91F4649C1DA1EEE300733BEB /* Login/Signup */ = {
+			isa = PBXGroup;
+			children = (
 				91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */,
 				91F4648D1D9F49B600733BEB /* TSSignUpViewController.swift */,
 				91F4648F1D9F49C900733BEB /* TSLogInViewController.swift */,
+			);
+			name = Login/Signup;
+			sourceTree = "<group>";
+		};
+		91F4649D1DA1EF0800733BEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91F4649C1DA1EEE300733BEB /* Login/Signup */,
+				91F464A01DA1EFF000733BEB /* HomeScreen */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		91F4649E1DA1EF6900733BEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91F464761D92BBC500733BEB /* Main.storyboard */,
+				91F464611D92BA6400733BEB /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		91F4649F1DA1EFB000733BEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				91F464701D92BB7800733BEB /* VideoUploadManager.swift */,
+				91F464951DA1EDA700733BEB /* AuthenticationManager.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		91F464A01DA1EFF000733BEB /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
 				91F4646C1D92BB7800733BEB /* TSMainViewController.swift */,
 				91F464911DA06D6900733BEB /* TSFeedViewController.swift */,
 				91F4646D1D92BB7800733BEB /* TSFriendsViewController.swift */,
 				91F4646E1D92BB7800733BEB /* TSRecordViewController.swift */,
 				91F4646F1D92BB7800733BEB /* TSStorisViewController.swift */,
-				91F464701D92BB7800733BEB /* VideoUploadManager.swift */,
-				91F464931DA1E64200733BEB /* TSHelpers.swift */,
-				91F464761D92BBC500733BEB /* Main.storyboard */,
-				91F4645F1D92BA6400733BEB /* Assets.xcassets */,
-				91F464611D92BA6400733BEB /* LaunchScreen.storyboard */,
-				91F464781D9B0C3300733BEB /* GoogleService-Info.plist */,
-				91F464641D92BA6400733BEB /* Info.plist */,
 			);
-			path = TripStori;
+			name = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F4649A1DA1EEA900733BEB /* TSStori.swift in Sources */,
 				91F464711D92BB7800733BEB /* TSMainViewController.swift in Sources */,
 				91F464721D92BB7800733BEB /* TSFriendsViewController.swift in Sources */,
 				91F4645B1D92BA6400733BEB /* TSWelcomeViewController.swift in Sources */,
@@ -252,6 +310,8 @@
 				91F464751D92BB7800733BEB /* VideoUploadManager.swift in Sources */,
 				91F464901D9F49C900733BEB /* TSLogInViewController.swift in Sources */,
 				91F464921DA06D6900733BEB /* TSFeedViewController.swift in Sources */,
+				91F464961DA1EDA700733BEB /* AuthenticationManager.swift in Sources */,
+				91F464981DA1EE3600733BEB /* TSUser.swift in Sources */,
 				91F464731D92BB7800733BEB /* TSRecordViewController.swift in Sources */,
 				91F464741D92BB7800733BEB /* TSStorisViewController.swift in Sources */,
 			);
