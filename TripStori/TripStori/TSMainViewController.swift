@@ -10,14 +10,13 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class TSMainViewController: UIViewController, UINavigationControllerDelegate {
+class TSMainViewController: UITabBarController, UINavigationControllerDelegate {
 
-    @IBOutlet weak var tabBar: UITabBar!
     let imagePicker = UIImagePickerController()
+    private let sb = UIStoryboard(name: "Main", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBar.delegate = self
         self.imagePicker.delegate = self
     }
     
@@ -37,36 +36,37 @@ class TSMainViewController: UIViewController, UINavigationControllerDelegate {
             // postAlert("Camera inaccessable", message: "Application cannot access the camera.")
         }
     }
-}
-
-extension TSMainViewController: UITabBarDelegate {
     
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if item.tag == 1 {
-            if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == .notDetermined ||  AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == .denied {
-                AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: { (videoGranted: Bool) -> Void in
-                    if (videoGranted) {
-                        AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeAudio, completionHandler: { (audioGranted: Bool) -> Void in
-                            if (audioGranted) {
-                                DispatchQueue.main.async {
-                                    // Both video & audio granted
-                                    self.presentCamera()
-                                }
-                            } else {
-                                // Rejected audio
-                                print("rejected audio")
+    func authorizeRecordingView() {
+        if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == .notDetermined ||  AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) == .denied {
+            AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: { (videoGranted: Bool) -> Void in
+                if (videoGranted) {
+                    AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeAudio, completionHandler: { (audioGranted: Bool) -> Void in
+                        if (audioGranted) {
+                            DispatchQueue.main.async {
+                                // Both video & audio granted
+                                self.presentCamera()
                             }
-                        })
-                    } else {
-                        // Rejected video
-                        print("rejected video")
-                    }
-                })
-            } else {
-                DispatchQueue.main.async {
-                    self.presentCamera()
+                        } else {
+                            // Rejected audio
+                            print("rejected audio")
+                        }
+                    })
+                } else {
+                    // Rejected video
+                    print("rejected video")
                 }
+            })
+        } else {
+            DispatchQueue.main.async {
+                self.presentCamera()
             }
+        }
+    }
+    
+   override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item.tag == 99 {
+            authorizeRecordingView()
         }
     }
 }

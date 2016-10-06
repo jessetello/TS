@@ -40,7 +40,7 @@ class AuthenticationManager {
         })
     }
     
-    func loginWithCredential(credential: FIRAuthCredential, completion: @escaping AuthenticationHandler)  {
+    func socialLoginWith(credential: FIRAuthCredential, completion: @escaping AuthenticationHandler)  {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if let authError = error {
                 print(authError)

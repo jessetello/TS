@@ -34,8 +34,17 @@ class TSWelcomeViewController: UIViewController, GIDSignInUIDelegate {
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email","public_profile","user_friends"], from: self) { loginResult, error in
             let cred = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-            AuthenticationManager.sharedInstance.loginWithCredential(credential: cred, completion: { (success) in
-                
+            AuthenticationManager.sharedInstance.socialLoginWith(credential: cred, completion: { (success) in
+                if success {
+                    let sb = UIStoryboard(name: "Main", bundle: nil)
+                    if let mainVC = sb.instantiateViewController(withIdentifier: "TSMainViewController") as? TSMainViewController {
+                        self.navigationController?.pushViewController(mainVC, animated: true)
+                    }
+                }
+                else {
+                    
+                    
+                }
             })
         }
     }

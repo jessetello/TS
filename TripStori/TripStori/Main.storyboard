@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Record View Controller-->
+        <!--Record-->
         <scene sceneID="IBd-rB-DIy">
             <objects>
-                <viewController id="jyN-Fj-HzS" customClass="TSRecordViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Record" id="jyN-Fj-HzS" customClass="TSRecordViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZGp-mB-E2Q"/>
                         <viewControllerLayoutGuide type="bottom" id="Sjz-6Y-XXT"/>
@@ -20,15 +20,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" tag="99" title="Record" id="1E2-Po-Ga5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fw-vN-0Ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3410" y="392"/>
+            <point key="canvasLocation" x="2207" y="625"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--Feed-->
         <scene sceneID="jjh-Bb-2Ur">
             <objects>
-                <viewController id="XGj-Fb-Tt6" customClass="TSFeedViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Feed" automaticallyAdjustsScrollViewInsets="NO" id="XGj-Fb-Tt6" customClass="TSFeedViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YMk-Um-wWs"/>
                         <viewControllerLayoutGuide type="bottom" id="usU-gs-Na3"/>
@@ -37,23 +38,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Hf-Mz-v2C">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Hf-Mz-v2C">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="36P-AK-e2D">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="36P-AK-e2D" id="tC4-yC-RXg">
+                                            <frame key="frameInset" width="375" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Hf-Mz-v2C" firstAttribute="top" secondItem="YMk-Um-wWs" secondAttribute="bottom" id="6Vz-49-Qit"/>
+                            <constraint firstItem="7Hf-Mz-v2C" firstAttribute="leading" secondItem="RTh-x0-MRf" secondAttribute="leading" id="E5p-uz-p04"/>
+                            <constraint firstAttribute="trailing" secondItem="7Hf-Mz-v2C" secondAttribute="trailing" id="ZNw-rG-Swb"/>
+                            <constraint firstAttribute="bottom" secondItem="7Hf-Mz-v2C" secondAttribute="bottom" id="lEQ-Ua-Hl0"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Feed" id="Sq6-kn-ZYY"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exn-PZ-biS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2682" y="392"/>
+            <point key="canvasLocation" x="1428" y="624.73763118440786"/>
         </scene>
-        <!--Friends View Controller-->
+        <!--Friends-->
         <scene sceneID="ARv-9h-5Ko">
             <objects>
-                <viewController id="ZEo-oX-DK9" customClass="TSFriendsViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Friends" automaticallyAdjustsScrollViewInsets="NO" id="ZEo-oX-DK9" customClass="TSFriendsViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fWQ-Rw-lZy"/>
                         <viewControllerLayoutGuide type="bottom" id="NX4-Xf-xHj"/>
@@ -61,12 +78,25 @@
                     <view key="view" contentMode="scaleToFill" id="dMo-oS-BdP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ba-uM-ntf">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Ba-uM-ntf" firstAttribute="top" secondItem="fWQ-Rw-lZy" secondAttribute="bottom" id="9RC-mR-H0J"/>
+                            <constraint firstItem="NX4-Xf-xHj" firstAttribute="top" secondItem="0Ba-uM-ntf" secondAttribute="bottom" id="XHv-6V-YLK"/>
+                            <constraint firstItem="0Ba-uM-ntf" firstAttribute="leading" secondItem="dMo-oS-BdP" secondAttribute="leading" id="hIv-c4-Sab"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ba-uM-ntf" secondAttribute="trailing" id="r9n-EM-Mb8"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Friends" id="cGf-jS-f6E"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhP-K0-UmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4850" y="392"/>
+            <point key="canvasLocation" x="3640.8000000000002" y="624.73763118440786"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DHq-s5-HlV">
@@ -272,7 +302,7 @@
                                 <color key="tintColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPJ-sp-plb">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -286,7 +316,7 @@
                                 <color key="tintColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -324,9 +354,34 @@
             <point key="canvasLocation" x="84" y="-197.45127436281859"/>
         </scene>
         <!--Main View Controller-->
+        <scene sceneID="IPv-xc-Kiv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwy-vE-Kqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="TSMainViewController" id="OcK-tD-QRW" customClass="TSMainViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dbU-ET-dBl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="XGj-Fb-Tt6" kind="relationship" relationship="viewControllers" id="EVt-II-59t"/>
+                        <segue destination="jyN-Fj-HzS" kind="relationship" relationship="viewControllers" id="lcQ-05-3TN"/>
+                        <segue destination="7Yk-LK-ebv" kind="relationship" relationship="viewControllers" id="ZiM-kg-w40"/>
+                        <segue destination="ZEo-oX-DK9" kind="relationship" relationship="viewControllers" id="7XN-L3-m9n"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="2042" y="-218"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TSMainViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TS" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -339,7 +394,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <tabBarItem title="Home" id="9Cf-70-3Lt"/>
-                                    <tabBarItem tag="1" title="Record" id="WLN-gl-OlB"/>
+                                    <tabBarItem tag="99" title="Record" id="WLN-gl-OlB"/>
                                     <tabBarItem tag="2" title="TripStoris" id="7eW-8a-Huv"/>
                                     <tabBarItem tag="3" title="Friends" id="LmX-uh-zZh"/>
                                 </items>
@@ -352,6 +407,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EmF-Xi-h8B" secondAttribute="bottom" id="tvq-6f-7mG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="HFy-Ng-3pb"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tabBar" destination="EmF-Xi-h8B" id="KGD-st-aSv"/>
@@ -359,12 +415,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950" y="302"/>
+            <point key="canvasLocation" x="1428" y="1478"/>
         </scene>
-        <!--Storis View Controller-->
+        <!--MyStoris-->
         <scene sceneID="2pi-au-iEl">
             <objects>
-                <viewController id="7Yk-LK-ebv" customClass="TSStorisViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MyStoris" id="7Yk-LK-ebv" customClass="TSStorisViewController" customModule="TripStori" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dcO-ae-A4V"/>
                         <viewControllerLayoutGuide type="bottom" id="Pcq-2n-duB"/>
@@ -373,9 +429,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DYM-xB-7Xk">
-                                <frame key="frameInset" minX="88" minY="44" width="200" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3T0-HW-Hc9"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DYM-xB-7Xk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bps-jZ-KMZ"/>
+                                </constraints>
                                 <segments>
                                     <segment title="List"/>
                                     <segment title="Map"/>
@@ -383,11 +441,21 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pcq-2n-duB" firstAttribute="top" secondItem="3T0-HW-Hc9" secondAttribute="bottom" id="0oD-aj-L3P"/>
+                            <constraint firstItem="DYM-xB-7Xk" firstAttribute="top" secondItem="dcO-ae-A4V" secondAttribute="bottom" constant="8" id="KaZ-Yd-cWi"/>
+                            <constraint firstAttribute="trailing" secondItem="3T0-HW-Hc9" secondAttribute="trailing" id="SJl-QQ-sIr"/>
+                            <constraint firstItem="DYM-xB-7Xk" firstAttribute="centerX" secondItem="C7y-gO-efA" secondAttribute="centerX" id="gRY-PO-lyK"/>
+                            <constraint firstItem="3T0-HW-Hc9" firstAttribute="top" secondItem="dcO-ae-A4V" secondAttribute="bottom" id="wYx-H4-m3a"/>
+                            <constraint firstItem="3T0-HW-Hc9" firstAttribute="leading" secondItem="C7y-gO-efA" secondAttribute="leading" id="yXO-dy-X7v"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="MyStoris" id="YLJ-bJ-OCb"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glw-ez-zGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4132" y="391.75412293853077"/>
+            <point key="canvasLocation" x="2912.8000000000002" y="624.73763118440786"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="cm1-oY-MuI">
@@ -411,7 +479,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tripSTORI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZL-nM-pI7">
                                 <constraints>

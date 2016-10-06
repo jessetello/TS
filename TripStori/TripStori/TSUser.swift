@@ -9,9 +9,9 @@
 import UIKit
 import Firebase
 
-class TSUser: FIRUser {
-    var firstName: String?
-    var lastName: String?
-    var emailAddress: String?
-    var userID: String?
-}
+//class TSUser: FIRUser {
+//    var firstName: String?
+//    var lastName: String?
+//    var emailAddress: String?
+//    var userID: String?
+//}
