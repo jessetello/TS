@@ -16,8 +16,8 @@ class TSLogInViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        emailField.underlined()
+        passwordField.underlined()  
     }
 
     @IBAction func login(_ sender: UIButton) {
