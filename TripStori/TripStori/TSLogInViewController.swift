@@ -37,25 +37,24 @@ class TSLogInViewController: UIViewController {
 
     @IBAction func login(_ sender: UIButton) {
         if validateLogInInfo() {
+            TSSpinner.show("Logging In...")
             if let email = emailField.text, let password = passwordField.text {
                 AuthenticationManager.sharedInstance.signIn(email: email, password: password) { (success) in
                     if success {
+                        TSSpinner.hide()
                         let sb = UIStoryboard(name: "Main", bundle: nil)
                         if let mainVC = sb.instantiateViewController(withIdentifier: "TSMainViewController") as? TSMainViewController {
                             self.navigationController?.pushViewController(mainVC, animated: true)
                         }
                     }
                     else {
-                        
+                        TSSpinner.show(duration: 3, title: "Login Failed")
                     }
                 }
             }
         }
         else {
-            
-            
-            
-            
+            TSSpinner.show(duration: 5, title: "Invalid Credentials")
         }
     }
 }

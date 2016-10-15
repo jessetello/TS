@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33DBE3A0E48FC3C9AB69532A /* Pods_TripStori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F763D3807B28A3A88DED80A /* Pods_TripStori.framework */; };
+		914AB4861DB1D162008BACD9 /* TSSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914AB4851DB1D162008BACD9 /* TSSpinner.swift */; };
 		91F464591D92BA6400733BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F464581D92BA6400733BEB /* AppDelegate.swift */; };
 		91F4645B1D92BA6400733BEB /* TSWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */; };
 		91F464601D92BA6400733BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F4645F1D92BA6400733BEB /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		506E8125C074EE25CABDCDD4 /* Pods-TripStori.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripStori.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripStori/Pods-TripStori.debug.xcconfig"; sourceTree = "<group>"; };
 		5F763D3807B28A3A88DED80A /* Pods_TripStori.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripStori.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62228FBFDE7E3F5F0F19E475 /* Pods-TripStori.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripStori.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripStori/Pods-TripStori.release.xcconfig"; sourceTree = "<group>"; };
+		914AB4851DB1D162008BACD9 /* TSSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSSpinner.swift; sourceTree = "<group>"; };
 		91F464551D92BA6300733BEB /* TripStori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripStori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F464581D92BA6400733BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91F4645A1D92BA6400733BEB /* TSWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSWelcomeViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				91F4649F1DA1EFB000733BEB /* ViewModels */,
 				91F4649D1DA1EF0800733BEB /* Controllers */,
 				91F464931DA1E64200733BEB /* TSHelpers.swift */,
+				914AB4851DB1D162008BACD9 /* TSSpinner.swift */,
 				91F4645F1D92BA6400733BEB /* Assets.xcassets */,
 				91F464781D9B0C3300733BEB /* GoogleService-Info.plist */,
 				91F464641D92BA6400733BEB /* Info.plist */,
@@ -309,6 +312,7 @@
 				91F464591D92BA6400733BEB /* AppDelegate.swift in Sources */,
 				91F464751D92BB7800733BEB /* VideoUploadManager.swift in Sources */,
 				91F464901D9F49C900733BEB /* TSLogInViewController.swift in Sources */,
+				914AB4861DB1D162008BACD9 /* TSSpinner.swift in Sources */,
 				91F464921DA06D6900733BEB /* TSFeedViewController.swift in Sources */,
 				91F464961DA1EDA700733BEB /* AuthenticationManager.swift in Sources */,
 				91F464981DA1EE3600733BEB /* TSUser.swift in Sources */,

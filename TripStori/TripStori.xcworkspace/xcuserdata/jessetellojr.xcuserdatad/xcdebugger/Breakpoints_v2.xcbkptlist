@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TripStori/TSLogInViewController.swift"
-            timestampString = "498192342.693688"
+            timestampString = "498193108.000804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "login(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TripStori/TSLogInViewController.swift"
-            timestampString = "498192344.206963"
+            timestampString = "498193108.000804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "login(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of TripStori.TSLogInViewController.login (__ObjC.UIButton) -&gt; ()"
-                  moduleName = "TripStori"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessetellojr/TripStori/TripStori/TripStori/TSLogInViewController.swift"
-                  timestampString = "498192449.348716"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of TripStori.TSLogInViewController.(login (__ObjC.UIButton) -&gt; ()).(closure #1)"
-                  moduleName = "TripStori"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessetellojr/TripStori/TripStori/TripStori/TSLogInViewController.swift"
-                  timestampString = "498192449.351437"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "261">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
