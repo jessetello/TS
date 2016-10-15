@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TripStori/AuthenticationManager.swift"
-            timestampString = "497406847.812064"
+            filePath = "TripStori/TSLogInViewController.swift"
+            timestampString = "498192342.693688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "signUp(email:password:completion:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "login(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,76 +25,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TripStori/AuthenticationManager.swift"
-            timestampString = "497406954.145117"
+            filePath = "TripStori/TSLogInViewController.swift"
+            timestampString = "498192344.206963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "signUp(email:password:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TripStori/TSMainViewController.swift"
-            timestampString = "497408347.736317"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "tabBar(_:didSelect:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TripStori/TSMainViewController.swift"
-            timestampString = "497408348.542801"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "tabBar(_:didSelect:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "login(_:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TripStori.TSMainViewController.tabBar (__ObjC.UITabBar, didSelect : __ObjC.UITabBarItem) -&gt; ()"
+                  symbolName = "function signature specialization &lt;Arg[0] = Dead&gt; of TripStori.TSLogInViewController.login (__ObjC.UIButton) -&gt; ()"
                   moduleName = "TripStori"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessetellojr/TripStori/TripStori/TripStori/TSMainViewController.swift"
-                  timestampString = "498186487.703952"
+                  urlString = "file:///Users/jessetellojr/TripStori/TripStori/TripStori/TSLogInViewController.swift"
+                  timestampString = "498192449.348716"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "40">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "372">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "@objc TripStori.TSMainViewController.tabBar (__ObjC.UITabBar, didSelect : __ObjC.UITabBarItem) -&gt; ()"
+                  symbolName = "function signature specialization &lt;Arg[1] = Owned To Guaranteed&gt; of TripStori.TSLogInViewController.(login (__ObjC.UIButton) -&gt; ()).(closure #1)"
                   moduleName = "TripStori"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jessetellojr/TripStori/TripStori/TripStori/TSMainViewController.swift"
-                  timestampString = "498186487.705659"
+                  urlString = "file:///Users/jessetellojr/TripStori/TripStori/TripStori/TSLogInViewController.swift"
+                  timestampString = "498192449.351437"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "261">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -105,13 +73,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TripStori/TSHelpers.swift"
-            timestampString = "498187143.569876"
+            filePath = "TripStori/AuthenticationManager.swift"
+            timestampString = "498192387.131701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "underlined()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "signIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TripStori/AuthenticationManager.swift"
+            timestampString = "498192388.411747"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "signIn(email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TripStori/AuthenticationManager.swift"
+            timestampString = "498192389.853528"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "signIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

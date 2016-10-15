@@ -50,3 +50,32 @@ class TSWelcomeViewController: UIViewController, GIDSignInUIDelegate {
     }
 }
 
+extension NSString {
+    public var isPhone: Bool {
+        get {
+            if self.range(of: "^(\\(?\\+?[0-9]*\\)?)?[0-9_\\- \\(\\)]*$", options: NSString.CompareOptions.regularExpression).location != NSNotFound {
+                return true
+            }
+            return false
+        }
+    }
+    
+    public var isEmail: Bool {
+        get {
+            if self.range(of: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$", options: NSString.CompareOptions.regularExpression).location != NSNotFound && self.length > 5 && self.length <= 254 {
+                return true
+            }
+            return false
+        }
+    }
+    public var isName: Bool {
+        get {
+            if self.range(of: "^[A-Za-z0-9-' ]+$", options: NSString.CompareOptions.regularExpression).location != NSNotFound {
+                return true
+            }
+            return false
+        }
+    }
+}
+
+

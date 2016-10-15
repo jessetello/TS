@@ -19,21 +19,43 @@ class TSLogInViewController: UIViewController {
         emailField.underlined()
         passwordField.underlined()  
     }
+    
+    func validateLogInInfo() -> Bool {
+        
+        if emailField.text?.isEmpty == true || passwordField.text?.isEmpty == true {
+            return false
+        }
+        
+        if let  password = passwordField.text?.characters.count, let email = emailField.text?.characters.count {
+            if password <= 3 || email <= 5 {
+                return false
+            }
+        }
+        
+        return true
+    }
 
     @IBAction func login(_ sender: UIButton) {
-        if let email = emailField.text, let password = passwordField.text {
-            AuthenticationManager.sharedInstance.signIn(email: email, password: password) { (success) in
-                if success {
-                    let sb = UIStoryboard(name: "Main", bundle: nil)
-                    if let mainVC = sb.instantiateViewController(withIdentifier: "TSMainViewController") as? TSMainViewController {
-                        self.navigationController?.pushViewController(mainVC, animated: true)
+        if validateLogInInfo() {
+            if let email = emailField.text, let password = passwordField.text {
+                AuthenticationManager.sharedInstance.signIn(email: email, password: password) { (success) in
+                    if success {
+                        let sb = UIStoryboard(name: "Main", bundle: nil)
+                        if let mainVC = sb.instantiateViewController(withIdentifier: "TSMainViewController") as? TSMainViewController {
+                            self.navigationController?.pushViewController(mainVC, animated: true)
+                        }
+                    }
+                    else {
+                        
                     }
                 }
-                else {
-
-                
-                }
             }
+        }
+        else {
+            
+            
+            
+            
         }
     }
 }

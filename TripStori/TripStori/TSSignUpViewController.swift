@@ -31,8 +31,20 @@ class TSSignUpViewController: UIViewController {
     }
     
     func validateSignupInfo() -> Bool {
+        
+        if emailField.text?.isEmpty == true || passwordField.text?.isEmpty == true {
+            return false
+        }
+        
+        if let  password = passwordField.text?.characters.count, let email = emailField.text?.characters.count {
+            if password <= 3 || email <= 5 {
+                return false
+            }
+        }
+        
         return true
     }
+
 
     @IBAction func signUp(_ sender: UIButton) {
         if validateSignupInfo() {
@@ -49,6 +61,11 @@ class TSSignUpViewController: UIViewController {
                     }
                 })
             }
+        }
+        else {
+            
+            
+            
         }
     }
 }
