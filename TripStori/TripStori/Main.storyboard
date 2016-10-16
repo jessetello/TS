@@ -228,7 +228,7 @@
         <scene sceneID="DHq-s5-HlV">
             <objects>
                 <navigationController id="6fc-fI-XBv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Eb-py-OTH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6Eb-py-OTH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,8 +325,8 @@
                                     <action selector="facebookLogin:" destination="JUt-yg-Fni" eventType="touchUpInside" id="Z2C-Mz-wul"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tripSTORI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HS-IN-Eei">
-                                <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stoury" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HS-IN-Eei">
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="50"/>
                                 <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -339,12 +339,19 @@
                                     <color key="titleColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everyone has a story to tell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5C-f4-nkf">
+                                <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="G0b-W5-Vly" firstAttribute="centerX" secondItem="OK6-WP-rvQ" secondAttribute="centerX" id="0TS-4h-xpQ"/>
                             <constraint firstItem="iRI-3O-bTp" firstAttribute="leading" secondItem="b81-Ez-6A0" secondAttribute="leading" id="0Y7-Mc-Zmn"/>
+                            <constraint firstItem="L5C-f4-nkf" firstAttribute="top" secondItem="6HS-IN-Eei" secondAttribute="bottom" constant="3" id="6UO-2D-B5J"/>
+                            <constraint firstItem="L5C-f4-nkf" firstAttribute="trailing" secondItem="6HS-IN-Eei" secondAttribute="trailing" id="9AO-vE-faL"/>
                             <constraint firstItem="Ovv-D7-RMD" firstAttribute="leading" secondItem="sdQ-Gw-BwI" secondAttribute="leading" id="Bgp-Rb-Zk4"/>
                             <constraint firstItem="l8g-Q6-yYR" firstAttribute="top" secondItem="xGH-0R-F1m" secondAttribute="bottom" constant="17" id="DNj-I7-Be3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="6HS-IN-Eei" secondAttribute="leading" id="DSI-kN-JWc"/>
@@ -356,6 +363,7 @@
                             <constraint firstItem="6HS-IN-Eei" firstAttribute="top" secondItem="hh1-tR-fNc" secondAttribute="bottom" constant="8" id="V1d-rh-onw"/>
                             <constraint firstItem="b81-Ez-6A0" firstAttribute="leading" secondItem="xGH-0R-F1m" secondAttribute="trailing" constant="16" id="ZK1-NS-gOa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iRI-3O-bTp" secondAttribute="trailing" id="cbI-fP-NMH"/>
+                            <constraint firstItem="L5C-f4-nkf" firstAttribute="leading" secondItem="6HS-IN-Eei" secondAttribute="leading" id="e0b-pd-dH2"/>
                             <constraint firstItem="iRI-3O-bTp" firstAttribute="trailing" secondItem="b81-Ez-6A0" secondAttribute="trailing" id="eKx-et-Sy0"/>
                             <constraint firstItem="b81-Ez-6A0" firstAttribute="top" secondItem="sdQ-Gw-BwI" secondAttribute="top" id="hEr-MY-g2Z"/>
                             <constraint firstItem="iRI-3O-bTp" firstAttribute="top" secondItem="Ovv-D7-RMD" secondAttribute="top" id="hid-2R-RJp"/>
@@ -605,12 +613,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tripSTORI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZL-nM-pI7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stoury" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZL-nM-pI7">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="11N-Pb-BOB"/>
                                     <constraint firstAttribute="width" constant="343" id="dNa-uV-3ef"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="50"/>
                                 <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -10,4 +10,7 @@ import UIKit
 
 class TSRecordViewController: UIViewController {
    //This will eventually be custom recording view
+    
+    
+    
 }
