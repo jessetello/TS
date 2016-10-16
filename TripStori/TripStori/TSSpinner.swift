@@ -34,7 +34,7 @@ public class TSSpinner: UIView {
         titleLabel.textAlignment = .center
         titleLabel.lineBreakMode = .byWordWrapping
         titleLabel.adjustsFontSizeToFitWidth = true
-        titleLabel.textColor = UIColor.white
+        titleLabel.textColor = UIColor.darkGray
         
         
         blurView.contentView.addSubview(titleLabel)
@@ -48,7 +48,7 @@ public class TSSpinner: UIView {
         outerCircle.strokeEnd = 0.45
         outerCircle.lineCap = kCALineCapRound
         outerCircle.fillColor = UIColor.clear.cgColor
-        outerCircle.strokeColor = UIColor.white.cgColor
+        outerCircle.strokeColor = UIColor.darkGray.cgColor
         outerCircleView.layer.addSublayer(outerCircle)
         
         outerCircle.strokeStart = 0.0
@@ -65,7 +65,7 @@ public class TSSpinner: UIView {
         innerCircle.strokeEnd = 0.9
         innerCircle.lineCap = kCALineCapRound
         innerCircle.fillColor = UIColor.clear.cgColor
-        innerCircle.strokeColor = UIColor.gray.cgColor
+        innerCircle.strokeColor = UIColor.lightGray.cgColor
         innerCircleView.layer.addSublayer(innerCircle)
         
         innerCircle.strokeStart = 0.0
@@ -347,7 +347,7 @@ public class TSSpinner: UIView {
     // layout elements
     //
     
-    private var blurEffectStyle: UIBlurEffectStyle = .dark
+    private var blurEffectStyle: UIBlurEffectStyle = .extraLight
     private var blurEffect: UIBlurEffect!
     private var blurView: UIVisualEffectView!
     private var vibrancyView: UIVisualEffectView!

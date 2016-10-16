@@ -8,16 +8,27 @@
 
 import UIKit
 
-class TSLogInViewController: UIViewController {
+class TSLogInViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginConstraint: NSLayoutConstraint!
+    var activeField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         emailField.underlined()
-        passwordField.underlined()  
+        passwordField.underlined()
+        emailField.delegate = self
+        passwordField.delegate = self
+        NotificationCenter.default.addObserver(self, selector:#selector(TSLogInViewController.keyboardWillShow(notification:)) , name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(TSLogInViewController.keyboardWillHide(notification:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     func validateLogInInfo() -> Bool {
@@ -37,6 +48,7 @@ class TSLogInViewController: UIViewController {
 
     @IBAction func login(_ sender: UIButton) {
         if validateLogInInfo() {
+            activeField?.resignFirstResponder()
             TSSpinner.show("Logging In...")
             if let email = emailField.text, let password = passwordField.text {
                 AuthenticationManager.sharedInstance.signIn(email: email, password: password) { (success) in
@@ -56,5 +68,30 @@ class TSLogInViewController: UIViewController {
         else {
             TSSpinner.show(duration: 5, title: "Invalid Credentials")
         }
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeField = textField
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        let info = notification.userInfo!
+        let keyboardFrame = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let time = info[UIKeyboardAnimationDurationUserInfoKey]
+        self.loginConstraint.constant = keyboardFrame.size.height
+
+        UIView.animate(withDuration: time as! TimeInterval, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        let info = notification.userInfo!
+        let time = info[UIKeyboardAnimationDurationUserInfoKey]
+        self.loginConstraint.constant = 0
+
+        UIView.animate(withDuration: time as! TimeInterval, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
     }
 }
