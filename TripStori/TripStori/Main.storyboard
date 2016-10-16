@@ -47,7 +47,7 @@
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAc-De-Ppu">
                                                 <frame key="frameInset" minX="8" minY="59" width="359" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Start Stori Stream"/>
+                                                <state key="normal" title="Start Stoury Stream"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,6 +81,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="99" title="Record" id="1E2-Po-Ga5"/>
+                    <connections>
+                        <outlet property="addLocationButton" destination="jbI-Mb-0nS" id="sUc-NL-Bxe"/>
+                        <outlet property="bottomView" destination="1ox-nO-wdr" id="HjZ-zc-HqS"/>
+                        <outlet property="cameraView" destination="ygL-NA-dtX" id="j7Y-yO-VIG"/>
+                        <outlet property="closeButton" destination="0xP-9A-h02" id="yGX-n9-cMg"/>
+                        <outlet property="descriptionTextView" destination="i7S-8N-GLN" id="Bvb-dG-Kkw"/>
+                        <outlet property="initializingLabel" destination="rIM-IB-m3Y" id="TD4-nW-S2x"/>
+                        <outlet property="seperatorLine" destination="3t1-qq-b0L" id="ZbU-9l-O4G"/>
+                        <outlet property="shareToFacebook" destination="cS3-NK-1Xu" id="jMD-7V-a7D"/>
+                        <outlet property="startStreamButton" destination="AAc-De-Ppu" id="Y9r-5j-Ld7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fw-vN-0Ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
